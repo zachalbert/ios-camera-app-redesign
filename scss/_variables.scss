@@ -1,8 +1,17 @@
-$base-fs:         18px;
-$base-lh:         1.4;
+$base-fs:           18px;
+$base-lh:           1.4;
 
-$lead:            $base-fs * $base-lh; // 1 lead for vertical rhythm
-$lead-half:       $lead / 2;
-$lead-double:     $lead * 2;
-$lead-triple:     $lead * 3;
-$lead-quadruple:  $lead * 4;
+$lead:              $base-fs * $base-lh; // 1 lead for vertical rhythm
+$lead-half:         $lead / 2;
+$lead-double:       $lead * 2;
+$lead-triple:       $lead * 3;
+$lead-quadruple:    $lead * 4;
+
+// Colors
+$color-site-bg:     #fff;
+$color-text:        #666B84;
+$color-link:        #F56438;
+$color-link-hover:  #CC3F14;
+
+$selection-bg:      $color-text;
+$selection-c:       $color-site-bg;

@@ -16,15 +16,20 @@ small {
   font-size: $ts-1;
 }
 
+strong,
+b {
+  font-weight: 500;
+}
+
 h1 {
   font-weight: 100;
-  font-size: $ts-6;
+  font-size: $ts-5;
   line-height: 1;
 }
 
 h2 {
-  font-size: $ts-4;
-  font-weight: 100;
+  font-size: $ts-3;
+  font-weight: 300;
   line-height: 1;
 }
 

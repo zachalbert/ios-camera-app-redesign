@@ -1,14 +1,85 @@
+/*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^
+*^*^*^*^*^*^*^*^         BASE         *^*^*^*^*^*^*^*^*^*^*
+^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*/
+
 body {
   font-size: $base-fs;
   line-height: $base-lh;
   font-weight: 300;
-  background: white;
+  background: $color-site-bg;
+  color: $color-text;
+}
+
+a,
+a:visited {
+  color: $color-link;
+}
+
+a:hover,
+a:active {
+  color: $color-link-hover;
+}
+
+a:active,
+a:not(.animated) {
+  transform: scale(0.95);
+  display: inline-block;
 }
 
 // Vertical rhythm
-p,
-h1,h2,h3,h4,h5,h6,
-section {
+p {
   margin-top: 0;
   margin-bottom: $lead;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: $lead-double;
+}
+
+h1,h3 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^
+*^*^*^*^*^*^*^*^*^   LAYOUT / MODULES   *^*^*^*^*^*^*^*^*^*
+^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*/
+
+.site-header {
+  color: #fff;
+}
+
+.header-image {
+  position: fixed;
+}
+
+.site-main,
+.site-footer {
+  background: $color-site-bg;
+  position: relative;
+}
+
+.site-main {
+  padding-top: $lead-triple;
+}
+
+section {
+  margin-bottom: $lead-triple;
+}
+
+.iphone-mock {
+  float: right;
+  position: relative;
+  margin-top: 3em;
+
+  img {
+    width: auto;
+    max-height: 700px;
+  }
 }
