@@ -13,6 +13,7 @@ body {
 a,
 a:visited {
   color: $color-link;
+  text-decoration: none;
 }
 
 a:hover,
@@ -20,31 +21,23 @@ a:active {
   color: $color-link-hover;
 }
 
-a:active,
-a:not(.animated) {
+a:active {
   transform: scale(0.95);
   display: inline-block;
-}
-
-// Vertical rhythm
-p {
-  margin-top: 0;
-  margin-bottom: $lead;
-}
-
-h2 {
-  margin-top: 0;
-  margin-bottom: $lead-double;
-}
-
-h1,h3 {
-  margin: 0;
 }
 
 img {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
 }
 
 /*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^
@@ -71,6 +64,10 @@ img {
 
 section {
   margin-bottom: $lead-triple;
+}
+
+blockquote {
+  margin-bottom: $lead-double;
 }
 
 .iphone-mock {

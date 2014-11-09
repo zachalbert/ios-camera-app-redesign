@@ -28,7 +28,7 @@ h1 {
 }
 
 h2 {
-  font-size: $ts-3;
+  font-size: $ts-4;
   font-weight: 300;
   line-height: 1;
 }
@@ -36,4 +36,16 @@ h2 {
 h3 {
   font-size: $ts-2;
   font-weight: 500;
+}
+
+// Vertical rhythm
+
+p,
+h2 {
+  margin-top: 0;
+  margin-bottom: $lead;
+}
+
+h1,h3 {
+  margin: 0;
 }

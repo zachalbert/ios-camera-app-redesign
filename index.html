@@ -33,8 +33,10 @@
             <img src="images/iphone-mock@2x.png" width="412" height="700">
           </div>
           <div class="medium-8 medium-centered columns">
-            <h1>iOS Camera App</h1>
-            <h2>An unsolicited redesign case study</h2>
+            <section>
+              <h1>iOS Camera App</h1>
+              <h3>An unsolicited redesign case study</h3>
+            </section>
             <a href="#contentStart" class="arrow-down animated infinite pointDown"></a>
           </div>
 
@@ -62,23 +64,26 @@
               <h2>The Problem Brief</h2>
               
               <p>
-                In this redesign, there were 3 main problems that I wanted to address. I arrived at these issues by blending my own opinions with those of a handful of active users of the default camera app.
+                In this redesign, there were 3 main problems that I wanted to address. I arrived at these issues by blending my own findings with those of a handful of active users of the default camera app to ensure I wasn&rsquo;t alone in my assumptions.
               </p>
               <p>
-                <strong>Problem 1</strong> &mdash; The camera app fails to take advantage of much of the power that newer model iPhones provide, such as independent ISO and shutter speed controls, and the ability to manually adjust focus. This functionality could be harnessed to give users greater creative control. While there is a newly introduced manual exposure control in iOS 8, this is a blend between shutter speed and ISO.
-              </p>
-              <p>
-                <strong>Problem 2</strong> &mdash; There is a huge lost opportunity in that the volume controls *only* allow a user to snap a photo. While convenient, they could do so much more by allowing easy adjustment of the aforementioned features like ISO, shutter speed, and focus.
-              </p>
-              <p>
-                <strong>Problem 3</strong> &mdash; Switching camera modes is very difficult, requiring a side swiping carousel that covers up some of the available options &mdash; making it unclear where the mode is that you&rsquo;re searching for. This results in fumbling around to switch to the appropriate mode before the moment is lost.
-              </p>
-              <p>
-                All in all, the default camera app doesn&rsquo;t seem to fit with the Apple ethos of providing elegant, but powerful creative tools. To ensure that I wasn&rsquo;t alone in these assumptions, I started by talking to a few people.
+                All in all, the default camera app doesn&rsquo;t seem to fit with the Apple ethos of providing elegant, yet powerful creative tools. It's overly simplified yet also tries to do too many things, such as a separate mode just for taking &ldquo;square&rdquo; photos.
               </p>
               <h3>Scoping the problem</h3>
               <p>
-                The concept of the camera could be a huge project to tackle, since it currently incorporates everything from taking a simple photo to different modes, editing, bulk editing and sharing, etc. In order to more deeply explore the interactions for the aforementioned three points, I&rsquo;ve decided to limit the scope just to photo mode, manually adjusting settings in photo mode, and access to video mode.
+                The camera app could be a huge project to tackle, since it currently incorporates everything from taking a simple photo to different modes, editing, sharing, etc. In order to more deeply explore the top three problems I unconvered in user interviews, I&rsquo;ve decided to limit the scope of this redesign just to photo mode, manually adjusting settings, and faster access to video mode. While keeping landscope mode in mind, I didn't create a separate prototype for it. I also gave myself a one week timebox to force tradeoffs and make the project more realistic.
+              </p>
+              <h3>Problem 1</h3>
+              <p>
+                The camera app fails to take advantage of much of the power that newer model iPhones provide, such as independent ISO and shutter speed controls, and the ability to manually adjust focus. This functionality could be harnessed to give users greater creative control. While there is a newly introduced manual exposure control in iOS 8, this is a blend between shutter speed and ISO.
+              </p>
+              <h3>Problem 2</h3>
+              <p>
+                There is a huge lost opportunity in that the volume controls <strong>only</strong> allow a user to snap a photo. While convenient, they could do so much more, like allowing for easy adjustment of the aforementioned features like ISO, shutter speed, and focus.
+              </p>
+              <h3>Problem 3</h3>
+              <p>
+                Switching camera modes is very difficult, requiring a side swipe in a tiny space that covers up 3&ndash;4 of the available options. This results in fumbling around to switch to the appropriate mode before the moment is lost, despite that fact that a mode like &ldquo;video&rdquo; is more likely to be needed quickly, whereas &ldquo;self timer&rdquo; mode nearly always requires ample setup for the shot.
               </p>
             </section>
             
@@ -86,13 +91,13 @@
               <h2>User Research</h2>
 
               <p>
-                I began by picking 10 people, and asked them what their top 3 frustrations were with the default camera app, and what their favorite part of it was.
+                I began by picking 10 people, and asked them their favorite part about using the app, and what their top three frustrations were.
               </p>
               <p>
-                While it would seem intuitive to only ask iOS people, I did ask a couple who use Android in order to hear what they really liked about the experience. Of the iOS interviewees, most were casual users of the camera app and didn&rsquo;t have strong opinions about it; two were professional designers with a strong aesthetic sense and opinions about photography; and one is a professional photographer who uses iOS devices for a good number of projects.
+                While it would seem intuitive to only ask iOS users, I did ask a couple who use Android in order to hear what they really liked about the experience. Of the iOS interviewees, most were casual users of the camera app and didn&rsquo;t have strong opinions about it; two were professional designers with a strong aesthetic sense and opinions about photography; and one is a professional photographer who uses iOS devices for a good number of projects.
               </p>
               <p>
-                A universal frustration was the difficulty of switching camera modes and potentially losing moments &mdash; though this only applied to the main camera and video modes. Most interviewees were lukewarm on the app, but the 3 heavy users sought a greater degree of control and power.
+                A universal frustration was the difficulty of switching camera modes and potentially losing moments &mdash; though this only applied to the main camera and video modes. Most interviewees were lukewarm on the app, but the 3 heaviest users sought a greater degree of control and power.
               </p>
               <p>
                 <img src="asdf.jpg" alt="screenshot of video mode being hidden">
@@ -101,11 +106,11 @@
                 Another interesting piece of feedback was the desire to use the volume buttons for more than simply snapping a photo. Even though iOS 8 does provide manual exposure control (an automatic combination of shutter speed and ISO), it&rsquo;s accessed first by tapping the screen, then sliding up or down. It&rsquo;s a bit awkward.
               </p>
               <blockquote>
-                &ldquo;I&rsquo;m itching to be able to use those volume controls for blah blah blah&hellip;&rdquo;
-                <span class="quote-author">&mdash; Zach McCabe</span>
+                &ldquo;I am grateful for the ability to use either one of the volume buttons to take a picture within the iOS camera app.  It would be great if I could do other things in the camera app with those volume buttons, too.  Like, adjust exposure compensation or as a way to close-focus.  Those sorts of things are tedious to do with touch gestures.&rdquo;<br>
+                <span class="quote-author pull-right">&mdash; Zach McCabe</span>
               </blockquote>
               <p>
-                One interviewee also mentioned the nokia something something app, which seems to have a pleasing way to manage the various camera controls on a mobile screen. 
+                One interviewee also mentioned the <a href="https://www.google.com/search?q=nokia+pro+cam&es_sm=91&source=lnms&tbm=isch&sa=X&ei=gTFTVO6nOc6UyASC0oLgDQ&ved=0CAoQ_AUoAw&biw=1122&bih=574" target="_blank">Nokia ProCam app</a>, which has a pleasing way to manage the various camera controls on a small mobile screen.
               </p>
               <p>
                 <img src="asdf.jpg" alt="screenshot of nokia app">
@@ -119,16 +124,16 @@
                 <img src="asdf.jpg" alt="screenshot of current camera UI">
               </p>
               <p>
-                The current UI is a bit of a hodgepodge. Features like filters, flash, and time delay get prime real estate while the user has to hunt for video mode. Time delay, for instance, is nearly always required for a carefully setup and staged shot &mdash; whereas video is often required to spontaneously capture moments that could be gone in an instant. The information architecture leads to a hunt-and-peck sort of experience.
+                The architecture of the current UI is a bit confusing. Features like filters, flash, and self-timer mode get prime real estate while the user has to hunt for video mode. The context for a self timed shot, for instance, nearly always requires a carefully staged shot &mdash; whereas video mode is often required to spontaneously capture moments that could be gone in an instant. The information architecture leads to a hunt-and-peck sort of experience.
               </p>
               <p>
-                The button to take a photo is fairly tiny. While I appreciate the similar visual motif through all the camera modes, I&rsquo;ve “missed” the button on more than one occasion. There is a lot going on in this UI, which requires too many tradeoffs to be made.
+                The button to take a photo is fairly tiny. While I appreciate the similar visual motif through all the camera modes, I&rsquo;ve missed the button on more than one occasion.
               </p>
               <p>
                 In general, since this is a thought exercise, I&rsquo;ve exercised creative license and removed features that I don&rsquo;t think belong, such as filters. Following the concept of an app doing one thing well, I reserve post-processing for other apps such as instagram or VSCO, and let the default camera app be for quick, on-the-fly capture. I&rsquo;ve also relegated controls like flash to a backseat role, since I and several interviewees keep it off in order to encourage reliance on natural lighting.
               </p>
               <p>
-                However, the most grievous issue with the UI is the mode carousel. Panoramic, slo-mo, square and time lapse modes shouldn&rsquo;t be on an equal footing with photo and video. What&rsquo;s more, when you&rsquo;re in time-lapse mode, you&rsquo;re only able to see slo-mo &mdash; leaving the other 4 hidden.
+                However, the most grievous issue with the UI is the camera mode carousel. Panoramic, slo-mo, square and time lapse modes shouldn&rsquo;t be on an equal footing with photo and video. What&rsquo;s more, when you&rsquo;re in time-lapse mode for instance, you&rsquo;re only able to see slo-mo &mdash; leaving the user scratching their head as to where the other four modes are.
               </p>
             </section>
 
@@ -136,7 +141,7 @@
               <h2>The solution</h2>
               
               <p>
-                Once I understood the problems I was solving for, I started sketching some ideas. I always start with pen and paper, as it allows me to iterate through many ideas rapidly. I quickly moved from sketching to using an app called POP (prototyping on paper). This allows me to take photos of drawings, and prototype simple interactions such as linking screens together. While rudimentary, it makes it easy to get the “feel” for how an app might work.
+                Once I understood the problems I was solving for, I started sketching some ideas. I always start with pen and paper, as it allows me to iterate through many ideas rapidly. I quickly moved from sketching to using an app called <a href="https://popapp.in/" target="_blank">POP</a>. This allows me to take photos of drawings, and link screens together to simulate a flow. While rudimentary, it makes it easy to get the “feel” for how an app might work.
               </p>
               <p>
                 <img src="asdf.jpg" alt="show sketches">
@@ -148,16 +153,21 @@
                 At several points, I asked my user testers to play around with the prototypes I was creating. This real time feedback helped ensure I was on the right track, and that I wasn&rsquo;t missing anything.
               </p>
               <p>
-                From POP, I moved into prototyping with proto.io. Learning how to use framer.js is on my list, but for the purposes of moving quickly I decided that a visual tool would better suit my needs.
+                From POP, I moved into prototyping with <a href="http://proto.io/" target="_blank">Proto.io</a>. While I have the desire to learn <a href="http://framerjs.com/" target="_blank">framer.js</a>, I decided a visual tool would better suit me for a tightly scoped redesign project. I was very impressed with the power that Proto.io provided, which allowed for complex, chained interactions with fine-grained easing control. While it's just a prototype and doesn't demonstrate <em>everything</em> possible with a native app, it does come pretty close.
+              </p>
+              <p>
+                <a href="https://zachalbert.proto.io/share/?id=4dfa37d0-4adb-4906-98b9-64ffdbd116aa&v=1" target="_blank">See the prototype here.</a><br>
+                <div class="protoio-embed-prototype" data-account="zachalbert" data-project="4dfa37d0-4adb-4906-98b9-64ffdbd116aa" data-version="1" data-show-sidebuttons="0" style="width: 100%; height: 800px;"></div>
               </p>
               <p>
                 The first version of the prototype gave me the ability to test the size of my buttons, and to play around with how the interactions work. For the sake of speed, I opted to constrain this project to the iPhone 5/5s, since that&rsquo;s the version I currently have. I also built this with this reach pattern in mind.
               </p>
               <p>
                 <img src="asdf.jpg" alt="show first version of the prototype & the issues it had">
+                <img src="asdf.jpg" alt="show reach pattern graphic">
               </p>
               <p>
-                While this first prototype didn&rsquo;t attempt to model everything, I quickly ran into problems. I received positive feedback on the sliders, but realized that it was difficult to see how the values on the sliders would change. Also, the settings and video buttons were too close together and hard to tap.
+                While this first prototype didn&rsquo;t attempt to model everything, I quickly ran into problems. I received positive feedback on the sliders, but realized that it was difficult to see how the values on the sliders would change since your thumb may cover it up. Also, the settings and video buttons were too close together and hard to tap.
               </p>
               <p>
                 This led me to swap the settings so the user can more easily see the values update in real time.
@@ -168,10 +178,13 @@
             </section>
 
             <section>
-              <h2>The future</h2>
-
+              <h2>Conclusion</h2>
+              
               <p>
-                I timeboxed this project to one week to keep it somewhat realistic, so there&rsquo;s a lot more that I&rsquo;d like to iterate on when I have the time. For instance:
+                Overall I've received very positive feedback from my user testers, as this has solved many of the problems they have with the original. There are still many unsolved problems, of course &mdash; such as the lack of QR code reader <em>still</em>.
+              </p>
+              <p>
+                Since I timeboxed this project to a single week, there&rsquo;s a lot more that I&rsquo;d like to iterate on when I have the time. For instance:
                 <ul>
                   <li>Work through the various camera modes such as pano, time-lapse, and slo-mo.</li>
                   <li>Broaden the scope to the entire flow of snapping a photo, editing, and posting to social media.</li>
