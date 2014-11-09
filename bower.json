@@ -1,0 +1,10 @@
+{
+  "name": "ios-camera-app-redesign",
+  "description": "iOS Camera App Redesign",
+  "version": "0.0.1",
+  "homepage": "https://github.com/zachalbert/ios-camera-app-redesign",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+  }
+}

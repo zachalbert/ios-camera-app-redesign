@@ -1,0 +1,14 @@
+body {
+  font-size: $base-fs;
+  line-height: $base-lh;
+  font-weight: 300;
+  background: white;
+}
+
+// Vertical rhythm
+p,
+h1,h2,h3,h4,h5,h6,
+section {
+  margin-top: 0;
+  margin-bottom: $lead;
+}

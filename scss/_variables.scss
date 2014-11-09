@@ -1,0 +1,8 @@
+$base-fs:         18px;
+$base-lh:         1.4;
+
+$lead:            $base-fs * $base-lh; // 1 lead for vertical rhythm
+$lead-half:       $lead / 2;
+$lead-double:     $lead * 2;
+$lead-triple:     $lead * 3;
+$lead-quadruple:  $lead * 4;
