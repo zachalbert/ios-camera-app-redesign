@@ -53,7 +53,7 @@
           <section>
             <p>
               The iOS camera app is accessible from the lock screen and integrates 
-              with many third party apps, which gives it huge potential to be a 
+              with many third party apps, giving it huge potential to be a 
               powerful creative tool.
             </p>
             <p>
@@ -64,11 +64,11 @@
             </p>
             <h3>Disclaimer</h3>
             <p>
-              As with all unsolicited redesigns, the problem space I&rsquo;m 
-              exploring and user base I&rsquo;m designing for is vastly different 
-              &mdash; and much smaller &mdash; than the team that designed the 
-              original. This is a thought exercise designed to build on their 
-              solution, not tear down what they&rsquo;ve created.
+              As with all unsolicited redesigns, my parameters are different than 
+              those placed on the original design team. The problem space I&rsquo;m 
+              exploring is different. The user base I&rsquo;m designing for is 
+              smaller. This is a thought exercise designed not to tear down what 
+              the original team created, but to build on to their solution.
             </p>
           </section>
           
@@ -84,15 +84,16 @@
             <p>
               All in all, the default camera app doesn&rsquo;t seem to fit with 
               the Apple ethos of providing elegant, yet powerful creative tools. 
-              It's overly simplified yet also tries to do too many things, such 
-              as providing a separate mode just for taking square photos.
+              On one hand it's overly simplified, but it also tries to do too 
+              many things &mdash; such as providing a separate mode just for 
+              taking square photos.
             </p>
             <h3>Scoping the problem</h3>
             <p>
               The camera app could be a huge project to tackle, since it currently 
               incorporates everything from taking a simple photo to different 
               modes, editing, sharing, etc. In order to more deeply explore the 
-              top three problems I unconvered in user interviews, I&rsquo;ve 
+              top three problems I uncovered in user interviews, I&rsquo;ve 
               decided to limit the scope of this redesign just to photo mode, 
               manually adjusting settings, and faster access to video mode. While 
               keeping landscape mode in mind, I didn't create a separate prototype 
@@ -201,22 +202,23 @@
               missed the button on more than one occasion.
             </p>
             <p>
-              In general, since this is a thought exercise, I&rsquo;ve exercised 
+              In general, since this is a thought exercise, I&rsquo;ve taken 
               creative license and removed features that I don&rsquo;t think 
               belong, such as filters. Following the concept of an app doing one 
               thing well, I reserve post-processing for other apps such as 
               instagram or VSCO, and let the default camera app be for quick, 
-              on-the-fly capture. I&rsquo;ve also relegated controls like flash 
-              to a backseat role, since I and several interviewees keep it off 
-              in order to encourage reliance on natural lighting.
+              on-the-fly capture. I&rsquo;ve also relocated certain controls, 
+              like the flash. Several interviewees mentioned they keep the flash 
+              turned off to make use of ambient lighting
             </p>
             <p>
               However, the most grievous issue with the UI is the camera mode 
-              carousel. Panoramic, slo-mo, square and time lapse modes 
-              shouldn&rsquo;t be on an equal footing with photo and video. 
-              What&rsquo;s more, when you&rsquo;re in time-lapse mode for instance, 
-              you&rsquo;re only able to see slo-mo &mdash; leaving the user 
-              scratching their head as to where the other four modes are.
+              carousel. Panoramic, slo-mo, square and timelapse modes shouldn&rsquo;t 
+              have the same prominence as photo or video modes. What&rsquo;s more, 
+              navigating from one mode to another can be confusing. For instance, 
+              when the user is in timelapse mode, the only other mode visible is 
+              slo-mo.  The user is left scratching her head as to where the other 
+              four modes went.
             </p>
             <p>
               <img src="images/time-lapse-hidden.jpg" alt="Where is video mode?" width="800" height="665">
@@ -227,13 +229,13 @@
             <h2>The Solution</h2>
             
             <p>
-              Once I understood the problems I was solving for, I started 
-              sketching some ideas. I always start with pen and paper, as it 
-              allows me to iterate through many ideas rapidly. I quickly moved 
+              Once I understood the problems I was solving for, I began sketching. 
+              (I always start with pen and paper, as it 
+              allows me to iterate through many ideas rapidly.) I quickly moved 
               from sketching to using an app called 
               <a href="https://popapp.in/" target="_blank">POP</a>. This allows 
               me to take photos of drawings, and link screens together to 
-              simulate a flow. While rudimentary, it makes it easy to get the 
+              simulate a flow. While rudimentary, it made it easy to get the 
               &ldquo;feel&rdquo; for how an app might work.
             </p>
             <p>
@@ -258,10 +260,10 @@
               size of my buttons, and to play around with how the interactions 
               work. Like all first versions, it kind of sucked.
             </p>
-            <h3>Prototype V1 (go ahead, play around with it)</h3>
-            <p>
-              <div class="protoio-embed-prototype" data-account="zachalbert" data-project="a7e40343-7a6a-4308-bcc5-98b797a3247e" data-version="1" data-show-sidebuttons="0" style="width: 100%; height: 400px;"></div>
-            </p>
+            <h3>Prototype V1</h3>
+            <div>
+              <div class="protoio-embed-prototype" data-account="zachalbert" data-project="a7e40343-7a6a-4308-bcc5-98b797a3247e" data-version="1" data-show-sidebuttons="0"></div>
+            </div>
             <p>
               <a href="http://www.uxmatters.com/mt/archives/2013/02/how-do-users-really-hold-mobile-devices.php" target="_blank"><img src="images/reach-pattern.jpg" width="115" height="160" alt="Mobile reach pattern" class="pull-right img-margin"></a>While 
               this first prototype didn&rsquo;t attempt to model everything, I 
@@ -272,14 +274,16 @@
             </p>
             <p>
               I reworked the prototype to solve some of these issues. I started 
-              by swapping the settings bar to the left. I also attempted to deal 
+              by moving the settings bar to the left. I also attempted to deal 
               more realistically with how a user might change settings like 
               manual focus, flash, and HDR, and also how to hint that tapping 
               one of the adjustments transfers control to the volume buttons on 
               the phone hardware.
             </p>
             <h3>Prototype V2</h3>
-            <div class="protoio-embed-prototype" data-account="zachalbert" data-project="4dfa37d0-4adb-4906-98b9-64ffdbd116aa" data-version="2" data-show-sidebuttons="0" style="width: 100%; height: 400px;"></div>
+            <div>
+              <div class="protoio-embed-prototype" data-account="zachalbert" data-project="4dfa37d0-4adb-4906-98b9-64ffdbd116aa" data-version="2" data-show-sidebuttons="0"></div>
+            </div>
             <p class="text-center">
               <a href="https://zachalbert.proto.io/share/?id=4dfa37d0-4adb-4906-98b9-64ffdbd116aa&v=2" target="_blank">View full size</a>
             </p>
@@ -298,8 +302,8 @@
             
             <p>
               Overall I've received very positive feedback from my user testers, 
-              as this has solved many of the problems they have with the default 
-              camera app.
+              as this prototype has solved many of the problems they have with 
+              the default camera app.
             </p>
             <p>
               Since I timeboxed this project to a single week, there&rsquo;s a 
