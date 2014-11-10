@@ -3,7 +3,13 @@
 }
 
 @media #{$tiny} {
+  h1 {
+    font-size: $ts-5;
+  }
 
+  .title-block {
+    margin: $lead-triple 0;
+  }
 }
 
 @media #{$small} {
@@ -11,13 +17,40 @@
 }
 
 @media #{$medium} {
+  .iphone-mock {
+    float: right;
+    margin: -8em -8em 0 0;
+  }
 
+  .title-block {
+    text-align: left;
+  }
+
+  .arrow-down {
+    margin-left: -1em;
+  }
+
+  .site-description {
+    margin-bottom: $lead-double;
+  }
 }
 
 @media #{$large} {
+  .iphone-mock {
+    margin: -17.5em -8em 0 0;
+  }
 
+  .title-block {
+    margin: ($lead * 5) 0;
+  }
 }
 
 @media #{$x-large} {
+  .iphone-mock {
+    margin: -22.5em -8em 0 0;
+  }
 
+  .title-block {
+    margin: ($lead * 6) 0;
+  }
 }

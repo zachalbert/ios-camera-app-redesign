@@ -73,6 +73,28 @@ img {
 
 .header-image {
   position: fixed;
+  min-width: 640px;
+}
+
+.title-block {
+  text-align: center;
+  margin: $lead-double 0;
+}
+
+.site-description {
+  margin-bottom: $lead;
+}
+
+.arrow-down {
+  padding: 1em;
+  margin: 0 auto;
+
+  &:before {
+    content: '';
+    border: 8px transparent solid;
+    border-top-color: #fff;
+    display: inline-block;
+  }
 }
 
 .site-main,
@@ -94,9 +116,9 @@ blockquote {
 }
 
 .iphone-mock {
-  float: right;
+  max-width: 412px;
   position: relative;
-  margin-top: 3em;
+  margin: 0 auto;
 
   img {
     width: auto;
@@ -106,8 +128,9 @@ blockquote {
   .screen-animation,
   .screen-placeholder {
     position: absolute;
-    top: 95px;
-    left: 87px;
+    width: 61.7%;
+    top: 13.6%;
+    left: 21.1%;
   }
 }
 
@@ -118,24 +141,24 @@ blockquote {
 
 .social-icon {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 50px;
   opacity: 0.5;
 
   &.twitter {
-    background: url('../images/icon-twitter.png') no-repeat;
+    background: url('../images/icon-twitter.png') center center no-repeat;
     background-size: 38px 38px;
     float: left;
   }
 
   &.dribbble {
-    background: url('../images/icon-dribbble.png') no-repeat;
+    background: url('../images/icon-dribbble.png') center center no-repeat;
     background-size: 38px 38px;
     margin: 0 auto;
   }
 
   &.github {
-    background: url('../images/icon-github.png') no-repeat;
+    background: url('../images/icon-github.png') center center no-repeat;
     background-size: 38px 38px;
     float: right;
   }

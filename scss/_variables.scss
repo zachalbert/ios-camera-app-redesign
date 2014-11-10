@@ -1,5 +1,6 @@
 // Base measurements
 $base-fs:           18px;
+$em-base:           18;
 $base-lh:           1.4;
 
 $lead:              $base-fs * $base-lh; // 1 lead for vertical rhythm
@@ -17,13 +18,17 @@ $color-link-hover:  #CC3F14;
 $selection-bg:      $color-text;
 $selection-c:       $color-site-bg;
 
+@function emCalc($pxWidth) {
+  @return $pxWidth / $em-base * 1em;
+}
+
 // Breakpoints
 $x-tiny-screen: emCalc(320);
 $tiny-screen: emCalc(480);
 $small-screen: emCalc(640);
 $medium-screen: emCalc(768);
 $large-screen: emCalc(1024);
-$x-large-screen: emCalc(1440);
+$x-large-screen: emCalc(1200);
 
 $screen: "only screen";
 $x-tiny: "only screen and (min-width: #{$x-tiny-screen})";
