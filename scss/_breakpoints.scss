@@ -13,7 +13,9 @@
 }
 
 @media #{$small} {
-
+  .protoio-embed-prototype {
+    display: block;
+  }
 }
 
 @media #{$medium} {
