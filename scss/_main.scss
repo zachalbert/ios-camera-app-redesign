@@ -88,12 +88,12 @@ img {
 .arrow-down {
   padding: 1em;
   margin: 0 auto;
+  display: inline-block;
 
   &:before {
     content: '';
     border: 8px transparent solid;
     border-top-color: #fff;
-    display: inline-block;
   }
 }
 
@@ -139,7 +139,7 @@ blockquote {
   position: relative;
 }
 
-.social-icon {
+a.social-icon {
   display: block;
   width: 60px;
   height: 50px;
@@ -151,7 +151,8 @@ blockquote {
     float: left;
   }
 
-  &.dribbble {
+  &.dribbble,
+  &.dribbble:active {
     background: url('../images/icon-dribbble.png') center center no-repeat;
     background-size: 38px 38px;
     margin: 0 auto;
