@@ -17,6 +17,14 @@ $z3:      $z1 * 3;
   z-index: $z1;
 }
 
-.iphone-mock {
+.mock-phone {
   z-index: $z2;
+}
+
+.screen-placeholder {
+  z-index: $z2+1;
+}
+
+.screen-animation {
+  z-index: $z2+2;
 }
