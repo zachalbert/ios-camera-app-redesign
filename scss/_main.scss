@@ -2,6 +2,10 @@
 *^*^*^*^*^*^*^*^         BASE         *^*^*^*^*^*^*^*^*^*^*
 ^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*/
 
+html {
+  min-width: 320px;
+}
+
 body {
   font-size: $base-fs;
   line-height: $base-lh;
@@ -14,11 +18,13 @@ a,
 a:visited {
   color: $color-link;
   text-decoration: none;
+  transition: all 0.2s ease-in;
 }
 
 a:hover,
 a:active {
   color: $color-link-hover;
+  transition: all 0.35 ease-out;
 }
 
 a:active {
@@ -30,6 +36,23 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto;
+
+  &.pull-left,
+  &.pull-right {
+    width: auto;
+  }
+}
+
+.img-margin {
+  margin: 0 $lead $lead;
+
+  &.pull-right {
+    margin-right: 0;
+  }
+
+  &.pull-left {
+    margin-left: 0;
+  }
 }
 
 .pull-left {
@@ -86,4 +109,53 @@ blockquote {
     top: 95px;
     left: 87px;
   }
+}
+
+.social {
+  margin: 0 auto;
+  position: relative;
+}
+
+.social-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+
+  &.twitter {
+    background: url('../images/icon-twitter.png') no-repeat;
+    background-size: 38px 38px;
+    float: left;
+  }
+
+  &.dribbble {
+    background: url('../images/icon-dribbble.png') no-repeat;
+    background-size: 38px 38px;
+    margin: 0 auto;
+  }
+
+  &.github {
+    background: url('../images/icon-github.png') no-repeat;
+    background-size: 38px 38px;
+    float: right;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
+}
+
+.footer-logo {
+  background: url('../images/zjh-logo@2x.png') no-repeat;
+  background-size: 96px 96px;
+  width: 96px;
+  height: 96px;
+  display: block;
+  margin: 0 auto $lead-double;
+}
+
+.license {
+  text-align: center;
+  @extend small;
 }

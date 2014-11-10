@@ -7,6 +7,14 @@
   color: $selection-c;
 }
 
+@function emCalc($pxWidth) {
+  @return $pxWidth / $em-base * 1em;
+}
+
+@function remCalc($pxWidth) {
+  @return $pxWidth / $em-base * 1rem;
+}
+
 .arrow-down {
   padding: 1em;
   margin-left: -1em;

@@ -1,3 +1,4 @@
+// Base measurements
 $base-fs:           18px;
 $base-lh:           1.4;
 
@@ -15,3 +16,21 @@ $color-link-hover:  #CC3F14;
 
 $selection-bg:      $color-text;
 $selection-c:       $color-site-bg;
+
+// Breakpoints
+$x-tiny-screen: emCalc(320);
+$tiny-screen: emCalc(480);
+$small-screen: emCalc(640);
+$medium-screen: emCalc(768);
+$large-screen: emCalc(1024);
+$x-large-screen: emCalc(1440);
+
+$screen: "only screen";
+$x-tiny: "only screen and (min-width: #{$x-tiny-screen})";
+$tiny: "only screen and (min-width: #{$tiny-screen})";
+$small: "only screen and (min-width: #{$small-screen})";
+$medium: "only screen and (min-width: #{$medium-screen})";
+$large: "only screen and (min-width: #{$large-screen})";
+$x-large: "only screen and (min-width: #{$x-large-screen})";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
